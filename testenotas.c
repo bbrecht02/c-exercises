@@ -52,11 +52,13 @@ int main() {
                 printf("Reprovado");
             }
             printf("\nMedia: %f", mediapf);
+	    printf("\n");
         
         }
         if (media >= 7) {
             printf("Aprovado");
             printf("\nMedia: %f", media);
+	    printf("\n");
 
         }
         return 0;
