@@ -6,19 +6,22 @@ int main() {
     //declararando as matrizes
     int matriz01[3][3];
     int matriz02[3][3];
-    int matriz03[3][3];
+    int matriz03[3][3] = {{0}};
     int i;
     int j;
+    int m;
 
     //pedindo os valores pro usuario
-    printf("digite os valores da matriz 01: ");
+    printf("Digite os valores da matriz 01: ");
+    printf("\n");
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 3; j++) {
             scanf("%d", &matriz01[i][j]);
         }
 
     }
-    printf("digite os valores da matriz 02: ");
+    printf("Digite os valores da matriz 02: ");
+    printf("\n");
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 3; j++) {
             scanf("%d", &matriz02[i][j]);
@@ -26,7 +29,7 @@ int main() {
     }
 
     //imprimindo as matrizes
-    printf("matriz 01: ");
+    printf("Matriz 01: ");
     printf("\n");
     for (i = 0; i < 3; i++) {
         printf("\n");
@@ -38,7 +41,7 @@ int main() {
     }
     printf("\n");
     printf("\n");
-    printf("matriz 02: ");
+    printf("Matriz 02: ");
     printf("\n");
     for (i = 0; i < 3; i++) {
         printf("\n");
@@ -49,5 +52,32 @@ int main() {
     }
     printf("\n");
 
+    //multiplicando matrizes
+    for (m = 0; m < 3; m++) {
+        for (i = 0; i < 3; i++) {
+            for (j = 0; j < 3; j++) {
+                matriz03[m][i] += matriz01[m][j] * matriz02[j][i];
+                //printf(" %d ", matriz03[m][i]);
+            }
+        }
+    }
+
+    printf("\n");
+    //imprimindo resultado
+    printf("\n");
+    printf("Matriz Resultado: ");
+    printf("\n");
+    for (i = 0; i < 3; i++) {
+        printf("\n");
+        for (j = 0; j < 3; j++) {
+            printf(" %d", matriz03[i][j]);
+            printf(" ");
+        }
+    }
+    printf("\n");
+
     return 0;
+
 }
+
+
