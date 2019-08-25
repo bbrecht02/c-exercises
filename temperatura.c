@@ -6,11 +6,11 @@ int main() {
     float f;
     float convC;
     float convF;
-    int usr;
-    printf("Deseja converter em Celsius ou em Fahrenheit: (0 ou 1)");
+    char usr;
+    printf("Deseja converter em Celsius ou em Fahrenheit: (c ou f)");
     printf("\n");
-    scanf("%d", &usr);
-    if (usr == 0) {
+    scanf("%s", &usr);
+    if (usr == 'c') {
         printf("Digite uma temperatura em Fahrenheit: ");
         printf("\n");
         scanf("%f", &f);
@@ -18,7 +18,7 @@ int main() {
         printf("conversao em Celsius:  %f", convC);
         printf("\n");    
     }
-    if (usr == 1) {
+    if (usr == 'f') {
         printf("Digite uma temperatura em Celsius: ");
         printf("\n");
         scanf("%f", &c);
