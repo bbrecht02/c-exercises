@@ -14,6 +14,7 @@ int main() {
     //pedindo os valores pro usuario
     printf("Digite os valores da matriz 01: ");
     printf("\n");
+    //for i para linha e for j para coluna da matriz 
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 3; j++) {
             scanf("%d", &matriz01[i][j]);
