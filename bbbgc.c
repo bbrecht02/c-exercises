@@ -42,6 +42,16 @@ int main(void)
 	}
 	puts("\n");
 	int keys[key_number];
+	int matriz[keys[13]][9];
+	/* testar esse trecho em um codigo separado
+	matriz[keys[0]][3] = 13;
+	for (int i; i < 13; i++) 
+	{
+		for (int j; i < 13; )
+	}
+	 */
+	
+
 	puts("total keys: ");
 	int i;
 	while (i < key_number) 
