@@ -8,6 +8,7 @@ int main() {
     float convC;
     float convF;
     char usr;
+    
 
     //inicio da execução 
     printf("Deseja converter em Celsius ou em Fahrenheit: (c ou f)");
