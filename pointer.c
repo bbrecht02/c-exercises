@@ -3,15 +3,12 @@
 int main(void) {
     
     int a = 3;
-	int b = 5;
-	int *p = &a;
-	int *q = &b;
-    int c;
+	int *pointer;
 
-    c = *p + *q;
+	pointer = &a;
 
-	printf("%i\n", c);
 
+	printf("%d", pointer);
 
 
 	return 0;

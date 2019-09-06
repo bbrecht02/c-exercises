@@ -12,7 +12,7 @@ int main(void)
     char usr;
     //int ultimo = len - 1;
     int num;
-
+    
 
     pointer = &stack[i];
 
@@ -21,7 +21,7 @@ int main(void)
     scanf("%s", &usr);
 
     
-    if (strcmp(usr, 'empilhar') == 0) 
+    if (strcmp(usr, "empilhar") == 0) 
     {
 
         puts("qual numero deseja adicionar? \n");
@@ -32,12 +32,12 @@ int main(void)
         len += 1;
         
     }
-    if (strcmp(usr, 'desempilhar') == 0) 
+    if (strcmp(usr, "desempilhar") == 0) 
     {
         *pointer = stack[--i];
         len -= 1;
     }
-    if (strcmp(usr, 'imprimir') == 0) 
+    if (strcmp(usr, "imprimir") == 0) 
     {
         printf("%i\n", *pointer);
     }
